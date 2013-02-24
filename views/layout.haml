@@ -3,9 +3,12 @@
   %head
     %meta{:charset => "utf-8"}/
     %title alexas shizzle
-    %link{:href => "/stylesheets/style.css", :rel => "stylesheet"}        
-    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}      
-    %script{:src => "coffee/scripts.js"}
+    %link{:href => "/stylesheets/style.css", :rel => "stylesheet"}
   %body
-    = yield
+    = haml :header
+    .container
+      = yield
+    = haml :footer
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+  %script{:src => "coffee/scripts.js"}
 
