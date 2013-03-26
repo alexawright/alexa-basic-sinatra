@@ -14,4 +14,26 @@ $(document).ready ->
       load.fadeOut 400
       $.ajax(@href).done (data) ->
         load.html(data).hide().fadeIn 200
-        
+  
+
+  topbar = $('.topbar')
+  title = $('a.title')
+  info = $('.topbar .info')
+
+  topbar.on "click", ->    
+    $(@).animate
+      height: "100px"
+    , 200, ->
+      info.fadeIn 200
+
+
+  
+  $(document).mousemove (e) ->
+    width = $(window).width()
+    top = e.pageY
+    x = e.pageX
+    if top < 100  
+      topbar.css "width", "#{(x / width) * 100}%"
+
+    if top > 100  
+      topbar.css "width", "100%"
