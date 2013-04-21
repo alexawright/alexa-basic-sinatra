@@ -11,7 +11,7 @@ $(document).ready ->
   #     $('ul.nav').removeClass "fixed"
 
 
-  links = $("header a")
+  links = $("header a, ul.nav li a")
   links.live "click", (e) ->
     e.preventDefault();
     load = $('#load')

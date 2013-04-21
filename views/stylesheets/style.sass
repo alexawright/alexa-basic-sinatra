@@ -57,11 +57,10 @@ header
 
 h1 
   color: gray
-  margin: 1em 0 1em
   font-size: 30px
   font-weight: 100
-  font-family: helvetica neue
   letter-spacing: 1px
+  margin: 16px 0px 16px
 
 p
   color: $white
@@ -77,24 +76,35 @@ p
   padding: 60px 
   text-align: center
 
+.item
+  text-align: center
+  padding: 80px
+  font-size: 15px
+  p
+    color: $dkgray
+  img
+    width: 500px
+
 ul.nav
   background: $dkgray
-  text-align: center
+  text-align: center 
   &.fixed 
     position: fixed
     top: 0
     left: 0
     right: 0    
   li
-    text-transform: uppercase
-    font-weight: 500
-    letter-spacing: 1px
-    text-shadow: 0px 1px 1px #58585B
-    display: inline-block 
-    font-size: 12px
-    padding: 20px 35px
-    color: #A7A9AB
+    display: inline-block
+    padding: 20px 40px
     position: relative
+    a
+      text-transform: uppercase
+      font-weight: 500
+      letter-spacing: 1px
+      text-shadow: 0px 1px 1px #58585B 
+      font-size: 11px
+      color: #A7A9AB
+      text-decoration: none
     &:before
       opacity: 0
       display: inline-block
@@ -109,7 +119,8 @@ ul.nav
       left: 43%
       content: ""
     &.active:before 
-      opacity: 100     
+      opacity: 100 
+    
 
 footer 
   overflow: auto
@@ -129,6 +140,11 @@ footer
       display: inline-block
       padding: 20px
       font-size: 30px
+    a
+      color: $dkgray
+      text-decoration: none
+      :&.hover
+        color: $white
   .copy
     display: block
 
@@ -148,7 +164,13 @@ ul.content
     img 
       width: 100%
 
-
+.circle
+  border-radius: 50%
+  width: 13px
+  height: 13px
+  background: $ltgray
+  margin: 4px
+  display: inline-block
 
 // responsive 
 @media (max-width: 570px)
