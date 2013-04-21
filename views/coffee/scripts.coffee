@@ -2,6 +2,15 @@ $(document).ready ->
   $(window).load ->
     $('body').fadeIn 500
 
+
+  # $(window).scroll (e) ->
+  #   top = $(window).scrollTop()
+  #   if top > 422
+  #     $('ul.nav').addClass "fixed"
+  #   else 
+  #     $('ul.nav').removeClass "fixed"
+
+
   links = $("header a")
   links.live "click", (e) ->
     e.preventDefault();
@@ -25,7 +34,6 @@ $(document).ready ->
       height: "100px"
     , 200, ->
       info.fadeIn 200
-
 
   
   $(document).mousemove (e) ->
