@@ -3,40 +3,22 @@ $(document).ready ->
     $('body').fadeIn 500
 
 
-  # $(window).scroll (e) ->
-  #   top = $(window).scrollTop()
-  #   if top > 422
-  #     $('ul.nav').addClass "fixed"
-  #   else 
-  #     $('ul.nav').removeClass "fixed"
-
-
-  links = $("header a, ul.nav li a")
+  links = $("ul.nav li a")
   links.live "click", (e) ->
-    e.preventDefault();
+    e.preventDefault()
     load = $('#load')
-    if $(@).hasClass('active')
+    if $(@).parents("li").hasClass('active')
       return false
     else 
-      links.removeClass('active')
-      $(@).addClass('active')
-      load.fadeOut 400
+      links.parents("li").removeClass('active')
+      $(@).parents("li").addClass('active')
+      load.css "visibility", "none"
       $.ajax(@href).done (data) ->
         load.html(data).hide().fadeIn 200
-  
-
-  topbar = $('.topbar')
-  title = $('a.title')
-  info = $('.topbar .info')
-
-  topbar.on "click", ->    
-    $(@).animate
-      height: "100px"
-    , 200, ->
-      info.fadeIn 200
 
   
   $(document).mousemove (e) ->
+    topbar = $('.topbar')
     width = $(window).width()
     top = e.pageY
     x = e.pageX
