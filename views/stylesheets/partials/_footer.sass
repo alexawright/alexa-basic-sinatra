@@ -1,0 +1,26 @@
+footer 
+  overflow: auto
+  width: 100%
+  display: block
+  font-size: 14px
+  text-align: center
+  padding: 50px
+  color: $dkgray
+  clear: both
+  background: $ltgray
+  box-shadow: inset 0px 2px 2px rgba(209, 209, 209, 0.63)
+  ul
+    display: block
+    margin-bottom: 30px
+    li 
+      display: inline-block
+      padding: 20px
+      font-size: 30px
+    a
+      color: $dkgray
+      text-decoration: none
+      +transition(.2s color)
+      &:hover
+        color: lighten($dkgray, 20%)
+  .copy
+    display: block
