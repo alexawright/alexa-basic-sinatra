@@ -35,6 +35,9 @@ ul.nav
       font-size: 11px
       color: #A7A9AB
       text-decoration: none
+      +transition(.3s color)
+      &:hover
+        color: darken($ltgray, 40%)
     &:before
       opacity: 0
       display: inline-block
@@ -50,4 +53,5 @@ ul.nav
       content: ""
     &.active:before 
       opacity: 100 
+
     

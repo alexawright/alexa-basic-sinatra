@@ -27,3 +27,4 @@ $(document).ready ->
 
     if top > 100  
       topbar.css "width", "100%"
+
