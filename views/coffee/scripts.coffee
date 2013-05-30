@@ -1,6 +1,6 @@
 $(document).ready ->
   $(window).load ->
-    $('body').fadeIn 500
+    $('body').fadeIn 1000
 
 
   links = $("ul.nav li a")
@@ -14,7 +14,7 @@ $(document).ready ->
       $(@).parents("li").addClass('active')
       load.css "visibility", "none"
       $.ajax(@href).done (data) ->
-        load.html(data).hide().fadeIn 200
+        load.html(data).hide().fadeIn 1000
 
   
   $(document).mousemove (e) ->
@@ -30,5 +30,12 @@ $(document).ready ->
 
   $('.info-link').on "click", -> 
     $('.info').slideToggle()
+
+$(".hover").mouseover ->
+  $(".text").css "visibility", "visible"
+
+$(".hover").mouseout ->
+  $(".text").css "visibility", "hidden"
+
 
 

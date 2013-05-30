@@ -5,7 +5,7 @@ ul.projects
   clear: both
   padding: 34px 0px
   overflow: auto
-  img 
+  img
     padding: 0
   li 
     float: left
@@ -13,6 +13,20 @@ ul.projects
     margin: 2.5% 
     img 
       width: 100%
+      &:hover
+        opacity: 0.5
+        -webkit-transition: opacity .2s ease-in-out
+.projects
+  .text 
+    position: relative
+    bottom: 30px
+    color: black
+    text-decoration: none
+    width: 200px
+    left: 0px
+    visibility: hidden
+  .hover .text
+    visibility: visible
 
 .circle
   border-radius: 50%
@@ -75,6 +89,10 @@ ul.projects
     &.leatherskirt1
       width: 35%
       border: 0
+    &.threads
+      width: 60%
+      padding: 0
+      margin-bottom: 15px
 
 .zana.staerk
   padding: 73px 0px

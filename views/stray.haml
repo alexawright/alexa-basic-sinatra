@@ -1,21 +1,11 @@
-.item.staerk  
+.item.stray  
   %h1 HIKING CATALOG
   .dash
   %h2 Green River Hiking Gear
-  #myCarousel.carousel.slide
-  %ol.carousel-indicators
-    %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-    %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-    %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-  / Carousel items
-  .carousel-inner
-    .active.item {:src => "images/hiking-1.jpg"} 
-    .item {:src => "images/hiking-02.jpg"} 
-    .item {:src => "images/hiking-03.jpg"} 
-    .item {:src => "images/hiking-04.jpg"} 
-  / Carousel nav
-  %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} &lsaquo;
-  %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} &rsaquo;  
+  %img.stray{:src => "images/hiking-01.jpg"}
+  %img.stray{:src => "images/hiking-02.jpg"} 
+  %img.stray{:src => "images/hiking-03.jpg"} 
+  %img.stray{:src => "images/hiking-04.jpg"} 
   %ul
     %li.circle 
     %li.circle 
@@ -23,3 +13,20 @@
     %li.circle 
     %li.circle 
     %li.circle 
+
+/ #myCarousel.carousel.slide
+/   %ol.carousel-indicators
+/     %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+/     %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+/     %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+/   / Carousel items
+/   .carousel-inner
+/     .active.item 
+/       %img.stray{:src => "images/hiking-03.jpg"} 
+/     .item 
+/       %img.stray{:src => "images/hiking-01.jpg"}
+/     .item 
+/       %img.stray{:src => "images/hiking-02.jpg"} 
+/   / Carousel nav
+/   %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+/   %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
