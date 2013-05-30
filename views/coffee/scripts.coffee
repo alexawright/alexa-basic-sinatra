@@ -30,3 +30,5 @@ $(document).ready ->
 
   $('.info-link').on "click", -> 
     $('.info').slideToggle()
+
+
