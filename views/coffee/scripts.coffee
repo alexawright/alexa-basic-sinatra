@@ -31,11 +31,5 @@ $(document).ready ->
   $('.info-link').on "click", -> 
     $('.info').slideToggle()
 
-$(".hover").mouseover ->
-  $(".text").css "visibility", "visible"
-
-$(".hover").mouseout ->
-  $(".text").css "visibility", "hidden"
-
 
 
