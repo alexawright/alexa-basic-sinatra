@@ -7,27 +7,29 @@ header
   a
     font-size: 40px
     font-weight: 200
-    font-family: wingdings
     text-shadow: 0px 1px 1px rgb(131, 131, 131) 
     letter-spacing: 5px
     color: $ltgray
     text-transform: lowercase
+    font-family: 'icomoon'
     text-decoration: none
+    -webkit-font-smoothing: antialiased
   img.header
     width: 100px 
+    &:hover
+      color: darken($dkgray, 40%)
 
 
 .info
-  background: black 
+  background: rgb(32, 31, 31) 
   padding: 60px 
   text-align: center
   display: none
 
 ul.nav
-  background: rgb(248, 248, 248)
-  box-shadow: inset 0px 2px 3px rgba(209, 209, 209, 0.63)
+  background: black
+  // box-shadow: inset 0px 2px 3px rgba(209, 209, 209, 0.63)
   text-align: center 
-  // background-image: url("http://i42.tinypic.com/ega3oh.jpg")
   &.fixed 
     position: fixed
     top: 0
@@ -41,9 +43,8 @@ ul.nav
       text-transform: uppercase
       font-weight: 500
       letter-spacing: 1px
-      // text-shadow: 0px 1px 1px #58585B 
       font-size: 11px
-      color: $dkgray
+      color: $ltgray
       text-decoration: none
       +transition(.3s color)
       &:hover
