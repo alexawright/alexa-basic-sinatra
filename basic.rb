@@ -27,7 +27,7 @@ get '/coffee/:name.js' do
 end
 
 get '/' do
-  haml :index, :layout => !request.xhr? 
+  haml :fashion, :layout => !request.xhr? 
 end
 
 get '/:name' do
