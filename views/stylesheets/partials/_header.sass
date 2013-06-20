@@ -15,19 +15,36 @@ header
     text-decoration: none
     -webkit-font-smoothing: antialiased
   img.header
-    width: 100px 
+    width: 11%
+    min-width: 105px
     &:hover
       color: darken($dkgray, 40%)
 
 
 .info
-  background: rgb(32, 31, 31) 
+  background: rgb(32, 31, 31)   
   padding: 60px 
   text-align: center
+  p
+    font-size: 17px 
+    font-family: avenir 
+    font-weight: 200 
+    letter-spacing: .5px 
+    text-align: center 
+    color: rgb(219, 219, 219) 
+    line-height: 33px 
+    width: 533px 
+    margin: auto 
+    text-shadow: rgb(107, 107, 107) 0px 1px 0px
+  a
+    color: $ltgray
+    &:hover
+      color: darken($ltgray, 20%)
+      +transition(.3s color)
+      text-decoration: none
 
 ul.nav
-  background: black
-  // box-shadow: inset 0px 2px 3px rgba(209, 209, 209, 0.63)
+  // background: black
   text-align: center 
   &.fixed 
     position: fixed
@@ -36,18 +53,19 @@ ul.nav
     right: 0    
   li
     display: inline-block
-    padding: 20px 40px
+    padding: 30px 25px
     position: relative
     a
       text-transform: uppercase
-      font-weight: 500
-      letter-spacing: 1px
-      font-size: 11px
-      color: $ltgray
+      font-weight: 400
+      letter-spacing: 1.6px
+      font-size: 9.5pt
+      color: rgb(78, 78, 78)
       text-decoration: none
+      text-shadow: rgb(218, 218, 218) 0px 1px 1px
       +transition(.3s color)
       &:hover
-        color: darken($ltgray, 40%)
+        color: darken($ltgray, 20%)
     &:before
       opacity: 0
       display: inline-block
@@ -64,4 +82,5 @@ ul.nav
     &.active:before 
       opacity: 100 
 
-    
+
+  
