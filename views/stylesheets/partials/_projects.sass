@@ -10,15 +10,28 @@ ul.projects
     width: 80%
     &.ownsite
       box-shadow: 0px 2px 3px rgba(209, 209, 209, 0.63)
+      width: 60%
   li 
     float: left
     width: 20%
     margin: 2.5% 
     img
-      width: 100%
+      width: 95%
       &:hover
         opacity: 0.5
         -webkit-transition: opacity .2s ease-in-out
+
+ul.projects2
+  li 
+    float: left
+    // width: 20%
+    margin: 2.5% 
+    img
+      width: 35%
+      &:hover
+        opacity: 0.5
+        -webkit-transition: opacity .2s ease-in-out
+
 
 .circle
   border-radius: 50%
@@ -41,7 +54,7 @@ ul.projects
   img
     width: 300px
     padding: 80px 0px
-    border: 6px rgba(2, 1, 1, 0.07) solid
+    // border: 6px rgba(2, 1, 1, 0.07) solid
     &.zana
       width: 100%
       border: none
@@ -94,7 +107,8 @@ ul.projects
     &.threads
       width: 60%
       padding: 0
-      margin-bottom: 15px
+      margin-bottom: 25px
+      border: 0
     &.site
       padding: 0
       width: 70%      
@@ -110,13 +124,33 @@ ul.projects
       padding: 25px
       border: 0px
       width: 30%
+    &.mrux
+      border: 0px
+      width: 70%
+      display: inline 
+      &.puzzle
+        width: 50%
+    &.mk
+      width: 30%
+  #arrowleft
+    margin-left: 0px
+    position: relative
+    margin-top: -120px
+    color: $dkgray
+    font-weight: 100
+    font-size: 80px
+    line-height: 20px
+    height: 52px
+    width: 80px
   #arrowright
-    margin-left: 20px
-    position: absolute
-    margin-top: -300px
-    color: $ltgray
-    font-weight: 200
-    font-size: 50px
+    margin-right: 0px
+    position: relative
+    margin-top: -120px
+    color: $dkgray
+    font-weight: 100
+    font-size: 80px
+    height: 52px
+    width: 80px
 
 .dash
   display: block 
