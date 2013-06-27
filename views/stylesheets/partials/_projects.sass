@@ -1,45 +1,31 @@
 ul.projects
-  width: 95%
+  width: 90%
   margin: auto
   text-align: center
   clear: both
-  padding: 34px 0px
+  padding: 0px
   overflow: auto
+  margin-top: 40px
+  margin-bottom: 40px
   img
     padding: 0
     width: 80%
-    &.ownsite
-      box-shadow: 0px 2px 3px rgba(209, 209, 209, 0.63)
-      width: 60%
+    box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
+    &.f 
+      box-shadow: none
   li 
     float: left
     width: 20%
-    margin: 2.5% 
+    margin: 2.5%
+    display: inline
     img
       width: 95%
       &:hover
         opacity: 0.5
         -webkit-transition: opacity .2s ease-in-out
-
-ul.projects2
-  li 
-    float: left
-    // width: 20%
-    margin: 2.5% 
-    img
+    &.web
       width: 35%
-      &:hover
-        opacity: 0.5
-        -webkit-transition: opacity .2s ease-in-out
-
-
-.circle
-  border-radius: 50%
-  width: 13px
-  height: 13px
-  background: $ltgray
-  display: inline-block
-  margin: 40px 8px
+      margin-left: 8%
 
 .item
   text-align: center
@@ -53,6 +39,7 @@ ul.projects2
     margin: auto
     line-height: 30px
     padding: 15px
+    text-decoration: none
   img
     width: 300px
     padding: 80px 0px
@@ -63,8 +50,10 @@ ul.projects2
       padding: 0
     &.zana_tape
       padding: 0
-      width: 300px
-      margin: 75px 20px
+      width: 350px
+      margin: 85px 20px 10px
+      box-shadow: 0px 1px 2px rgba(209, 209, 209, 0.63)
+      border: 1px solid $ltgray
     &.rosethorn
       width: 65%
       border: none
@@ -80,12 +69,14 @@ ul.projects2
       width: 70%
       padding: 0
       margin: 40px 0 35px
-      box-shadow: 0px 2px 3px rgba(209, 209, 209, 0.63)
+      box-shadow: 0px 1px 2px rgba(209, 209, 209, 0.63)
+      border: 1px solid $ltgray
+    &.rosethorn
     &.foxicon
       width: 37%
-      margin-bottom: 105px
+      margin-bottom: 60px
       border: none
-      padding: 0
+      padding: 30px
     &.photo
       width: 35%
       margin: 10px
@@ -102,13 +93,18 @@ ul.projects2
       width: 60%
       padding: 0
       margin-top: 10px
-    &.stray
-      width: 50%
-      padding: 0
-    &.leatherskirt1
-      width: 35%
+    &.clippedgar
+      width: 38%
       border: 0
       padding: 0
+    &.detailgar
+      width: 20%
+      border: 0
+      margin: 20px
+      padding: 0
+      box-shadow: 0px 1px 3px rgba(209, 209, 209, 0.63)
+      border: 1px solid $ltgray
+      margin-bottom: 50px
     &.threads
       width: 65%
       padding: 0
@@ -116,15 +112,22 @@ ul.projects2
       border: 0
     &.site
       padding: 0
-      width: 70%      
-      // box-shadow: 0px 2px 3px rgba(209, 209, 209, 0.63)
-      margin-bottom: 25px
+      width: 73%
+      margin: 40px
       border: 1px solid $ltgray
+      box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
     &.fashionart
       padding: 0
-      width: 65%
-      margin-bottom: 15px
+      width: 73%
+      margin: 40px
       border: 1px solid $ltgray
+      box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
+    &.fashionart2
+      padding: 0
+      width: 35%
+      margin: 20px
+      border: 1px solid $ltgray
+      box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
     &.wang
       padding: 25px
       border: 0px
