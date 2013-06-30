@@ -26,14 +26,6 @@ get '/coffee/:name.js' do
   coffee :"coffee/#{params[:name]}"  
 end
 
-get '/' do
-  haml :fashion, :layout => !request.xhr? 
+get '/*' do
+  haml :layout
 end
-
-get '/:name' do
-  haml :"#{params[:name]}", :layout => !request.xhr? 
-end
-
-
-
-
