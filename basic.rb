@@ -27,10 +27,11 @@ get '/coffee/:name.js' do
 end
 
 get '/' do
-  haml :fashion, :layout => !request.xhr? 
+  haml :graphics, :layout => !request.xhr? 
 end
 
 get '/:name' do
+  @route = "#{params[:name]}"
   haml :"#{params[:name]}", :layout => !request.xhr? 
 end
 

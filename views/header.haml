@@ -12,11 +12,11 @@
     %a{:href => "mailto:alexalwright@gmail.com"} email me. 
     
 %ul.nav
-  %li.active
+  %li{ :class => ("active" if @route == "graphics")}
     %a{:href => "/graphics"} Graphic + Illustration
-  %li
+  %li{ :class => ("active" if @route == "fashion")}
     %a{:href => "/fashion"} Fashion
-  %li 
+  %li{ :class => ("active" if @route == "play")}
     %a{:href => "/play"} Play
-  %li 
+  %li{ :class => ("active" if @route == "web")}
     %a{:href => "/web"} Web Design
