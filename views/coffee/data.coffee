@@ -75,7 +75,20 @@ data.raw = [
       url: 'fashion'
     
     items: [
-  
+      {
+        title: 'Screenprinted Pillows'
+        subtitle: 'Organic Thread Print'
+        description: 'stuff'
+        url: 'stuff'
+        thumbnail: 'tnail-tools.jpg'
+        images: [
+          'tools.png'
+          'puzzle.png'
+          'monkey.png'
+          'prism.png'
+          'monolith-monkey.png'
+        ]
+      }
     ]
   }
 
@@ -85,7 +98,20 @@ data.raw = [
       url: 'play'
     
     items: [
-  
+      {
+        title: 'Play'
+        subtitle: 'Organic Thread Print'
+        description: 'stuff'
+        url: 'stuff'
+        thumbnail: 'tnail-tools.jpg'
+        images: [
+          'tools.png'
+          'puzzle.png'
+          'monkey.png'
+          'prism.png'
+          'monolith-monkey.png'
+        ]
+      }
     ]
   }
 
@@ -95,7 +121,20 @@ data.raw = [
       url: 'web'
     
     items: [
-  
+      {
+        title: 'Web Design'
+        subtitle: 'Organic Thread Print'
+        description: 'stuff'
+        url: 'stuff'
+        thumbnail: 'tnail-tools.jpg'
+        images: [
+          'tools.png'
+          'puzzle.png'
+          'monkey.png'
+          'prism.png'
+          'monolith-monkey.png'
+        ]
+      }
     ]
   }
 ]

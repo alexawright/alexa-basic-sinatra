@@ -62,10 +62,10 @@ class ItemPageView extends Backbone.View
   
   template: _.template """
   <% for (var i in images) { %><img src="/images/<%= images[i] %>"/><% } %>
-  <h1><%= title %></h1>
-  <div class="dash"></div>
-  <h2><%= subtitle %></h2>
-  <p><%= description %></p>
+    <h1><%= title %></h1>
+    <div class="dash"></div>
+    <h2><%= subtitle %></h2>
+    <p><%= description %></p>
   """
 
   render: -> 
