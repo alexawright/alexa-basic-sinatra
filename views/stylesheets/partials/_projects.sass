@@ -178,11 +178,18 @@ ul li.circle
     color: red
 
 
-@media (max-width: 800px)
-  ul.projects,
-    li 
-      width: 45%
-
-  ul.projects.web li 
-    width: 100%
-    margin: 0
+@media (max-width: 840px)
+  ul
+    &.projects,
+    &.web 
+      li
+        width: 45%
+        min-height: 480px
+        
+@media (max-width: 570px)
+  ul
+    &.projects,
+    &.web 
+      li 
+        width: 100%
+        margin: 0
