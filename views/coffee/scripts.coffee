@@ -1,11 +1,11 @@
 $ ->
 
-  $.isiPad = ->
-    navigator.platform.indexOf("iPad") isnt -1
+  $.isMobile = ->
+    navigator.platform.indexOf("iPad") isnt -1 or navigator.platform.indexOf("iPhone") isnt -1
 
-  if $.isiPad()
+  if $.isMobile()
     $("a").hover ->
-      $(this).addClass "ipad-hover"
+      $(this).addClass "mobile-hover"
 
 
   activeNav = ->
