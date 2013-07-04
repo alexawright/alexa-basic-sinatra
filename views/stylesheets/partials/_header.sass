@@ -47,7 +47,7 @@ header
       text-decoration: none
       border-bottom: none
 
-ul.nav
+.nav
   text-align: center 
   background: rgb(236, 236, 236)
   box-shadow: inset 0px 0px 2px rgba(78, 71, 71, 0.16)
@@ -88,5 +88,11 @@ ul.nav
     &.active:before 
       opacity: 100 
 
+@media (max-width: 570px)
+  .nav li.active
+    a
+      text-decoration: underline
+    &:before 
+      opacity: 0
 
   

@@ -40,7 +40,7 @@ $ ->
             $content.css "height", ""
             activeNav()  
 
-    $("li a").on "click", (e) ->
+    $(".nav li a, .projects li a").on "click", (e) ->
       e.preventDefault()      
       _link = $(this).attr("href")
 
