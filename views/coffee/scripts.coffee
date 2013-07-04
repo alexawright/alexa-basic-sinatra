@@ -1,5 +1,13 @@
 $ ->
 
+  $.isiPad = ->
+    navigator.platform.indexOf("iPad") isnt -1
+
+  if $.isiPad()
+    $("a").hover ->
+      $(this).addClass "ipad-hover"
+
+
   activeNav = ->
 
     navItem = $(".nav li")
