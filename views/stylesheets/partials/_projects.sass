@@ -1,0 +1,205 @@
+ul.projects
+  width: 90%
+  text-align: center
+  clear: both
+  padding: 0px
+  margin: 40px auto
+  img
+    padding: 0
+    width: 80%
+    box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
+    &.f 
+      box-shadow: none
+  li 
+    float: left
+    width: 20%
+    margin: 2.5%
+    display: inline
+    img
+      width: 95%
+      &:hover
+        opacity: 0.5
+        -webkit-transition: opacity .2s ease-in-out
+  &.web li
+    width: 35%
+    margin-left: 8%
+
+.item
+  text-align: center
+  padding: 50px 0px
+  font-size: 15px
+  p
+    color: $dkgray
+    font-size: 14px
+    max-width: 880px
+    text-align: center
+    margin: auto
+    line-height: 30px
+    padding: 15px
+    text-decoration: none
+  img
+    width: 300px
+    padding: 80px 0px
+    &.zana
+      width: 100%
+      border: none
+      padding: 0
+      margin-top: 40px
+    &.zana_tape
+      padding: 0
+      width: 350px
+      margin: 85px 20px 10px
+      box-shadow: 0px 1px 2px rgba(209, 209, 209, 0.63)
+      border: 1px solid $ltgray
+    &.rosethorn
+      width: 65%
+      border: none
+      padding: 70px
+    &.staerk
+      width: 70%
+      border: none
+    &.sizechartmain
+      width: 40%
+      border: none
+      padding: 0
+    &.sizechart
+      width: 70%
+      padding: 0
+      margin: 40px 0 35px
+      box-shadow: 0px 1px 2px rgba(209, 209, 209, 0.63)
+      border: 1px solid $ltgray
+    &.rosethorn
+    &.foxicon
+      width: 37%
+      margin-bottom: 60px
+      border: none
+      padding: 30px
+    &.photo
+      width: 35%
+      margin: 10px
+      padding: 0
+    &.bdaycard
+      width: 60%
+      padding: 0
+      margin-bottom: 20px
+      border: 0
+    &.frankie
+      width: 60%
+      padding: 0
+    &.wug
+      width: 60%
+      padding: 0
+      margin-top: 10px
+    &.clippedgar
+      width: 38%
+      border: 0
+      padding: 0
+    &.detailgar
+      width: 20%
+      border: 0
+      margin: 20px
+      padding: 0
+      box-shadow: 0px 1px 3px rgba(209, 209, 209, 0.63)
+      border: 1px solid $ltgray
+      margin-bottom: 50px
+    &.threads
+      width: 65%
+      padding: 0
+      margin-bottom: 45px
+      border: 0
+    &.site
+      padding: 0
+      width: 73%
+      margin: 40px
+      border: 1px solid $ltgray
+      box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
+    &.fashionart
+      padding: 0
+      width: 73%
+      margin: 40px
+      border: 1px solid $ltgray
+      box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
+    &.fashionart2
+      padding: 0
+      width: 35%
+      margin: 20px
+      border: 1px solid $ltgray
+      box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
+    &.wang
+      padding: 25px
+      border: 0px
+      width: 30%
+    &.mrux
+      border: 0px
+      width: 90%
+      display: inline 
+      &.puzzle
+        width: 60%
+    &.mk
+      width: 45%
+      margin-bottom: 60px
+      padding: 0px
+    &.mk2
+      width: 45%
+      padding: 0px
+      margin-bottom: 40px
+    &.ipad
+      width: 55%
+    &.resume
+      max-width: 1000px
+      min-width: 1000px
+      padding: 0px
+      border: 1px solid $ltgray
+      box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
+  #arrowleft
+    margin-left: 0px
+    position: relative
+    margin-top: -120px
+    color: $dkgray
+    font-weight: 100
+    font-size: 80px
+    line-height: 20px
+    height: 52px
+    width: 80px
+  #arrowright
+    margin-right: 0px
+    position: relative
+    margin-top: -120px
+    color: $dkgray
+    font-weight: 100
+    font-size: 80px
+    height: 52px
+    width: 80px
+
+.dash
+  display: block 
+  width: 80px 
+  height: 0 
+  border-top: 1px solid #ddd 
+  text-align: center 
+  margin: 2em auto
+
+
+@media (max-width: 840px)
+  ul
+    &.projects,
+    &.web 
+      li
+        width: 45%
+        min-height: 480px
+
+@media (max-width: 570px)
+  ul
+    &.projects,
+    &.projects.web 
+      li 
+        width: 100%
+        margin: 0
+        min-height: 0
+
+  .item 
+    padding: 20px 
+    img
+      width: 100% !important
+      padding: 0 !important 
+      margin: 0 0 20px !important

@@ -1,0 +1,25 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "fashion, art, design, illustration, fashion design, web design, web, web designer, alexa wright, alexa l wright, alexa lam le wright, fit, parsons, nyc, new york, brooklyn, brooklyn designer, drawing, brand identity", :name => "keywords"}/
+    %meta{:content => "Web Design, Fashion Design, Illustration", :name => "description"}/
+    %meta{:content => "Alexa Wright", :name => "author"}/
+    %meta{:content => "width=device-width, initial-scale=1.0, user-scalable=no", :name => "viewport"}/
+    %title Alexa Wright | Portfolio
+    %link{:href => "/stylesheets/style.css", :rel => "stylesheet"}
+    %link{:href => "/images/icon.ico", :rel => "shortcut icon"}/
+    %link{:href => "/images/icon.png", :rel => "apple-touch-icon"}/
+    %script{:src => "js/modernizr.js"}
+
+    / %link{:href => "../assets/css/bootstrap-responsive.css", :rel => "stylesheet"}
+  %body
+    .page-wrap
+      = haml :header
+      .content
+        #load
+          = yield
+      .push
+    = haml :footer
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+  %script{:src => "coffee/scripts.js"}
