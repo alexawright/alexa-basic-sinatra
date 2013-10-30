@@ -1,8 +1,10 @@
-.item    
-  %img.site{:src => "/images/portfolio-site.jpg"} 
-  %img.ipad{:src => "/images/portfolio-ipad.jpg"} 
-  %br
-  %img.wang{:src => "/images/portfolio-iphone.jpg"} 
+.item
+  .row
+    .col-md-12  
+      %img.full-width{:src => "/images/portfolio-site.jpg"} 
+      %img.full-width.no-shadow{:src => "/images/portfolio-ipad.jpg"} 
+    .col-md-5
+      %img.half-width.no-shadow{:src => "/images/portfolio-iphone.jpg"} 
   %h1 Portfolio Site
   .dash
   %h2 www.alexa-wright.com
