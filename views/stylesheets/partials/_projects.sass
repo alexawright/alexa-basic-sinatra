@@ -1,28 +1,18 @@
-ul.projects
-  width: 90%
-  text-align: center
-  clear: both
-  padding: 0px
-  margin: 40px auto
+.projects
+  padding-top: 50px
   img
-    padding: 0
-    width: 80%
-    box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
-    &.f 
-      box-shadow: none
-  li 
-    float: left
-    width: 20%
-    margin: 2.5%
+    +box-shadow(0px 1px 1px rgba(209, 209, 209, 0.63))
     display: inline
-    img
-      width: 95%
-      &:hover
-        opacity: 0.5
-        -webkit-transition: opacity .2s ease-in-out
-  &.web li
-    width: 35%
-    margin-left: 8%
+    -webkit-filter: grayscale(0%) brightness(100%) contrast(100%)
+    &:hover
+      -webkit-transition: opacity .2s ease-in-out
+      -webkit-filter: grayscale(100%) brightness(100%) contrast(100%)
+
+.project-tile 
+  margin-bottom: 50px 
+  text-align: center 
+  img 
+    width: 85%
 
 .item
   text-align: center
@@ -151,25 +141,6 @@ ul.projects
       padding: 0px
       border: 1px solid $ltgray
       box-shadow: 0px 1px 1px rgba(209, 209, 209, 0.63)
-  #arrowleft
-    margin-left: 0px
-    position: relative
-    margin-top: -120px
-    color: $dkgray
-    font-weight: 100
-    font-size: 80px
-    line-height: 20px
-    height: 52px
-    width: 80px
-  #arrowright
-    margin-right: 0px
-    position: relative
-    margin-top: -120px
-    color: $dkgray
-    font-weight: 100
-    font-size: 80px
-    height: 52px
-    width: 80px
 
 .dash
   display: block 

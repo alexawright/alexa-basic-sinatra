@@ -1,8 +1,14 @@
+// body
+//   border-top: 3px solid black
+
+#load
+  background: whiteSmoke
+
 header
   position: relative
   text-align: center
   background: white
-  margin-top: 8px
+  margin-top: 15px
   .container
     width: 100%
     padding: 1.5%
@@ -25,6 +31,7 @@ header
   background: $offblack
   padding: 40px 
   text-align: center
+  display: none
   p
     font-size: 14px 
     +font 
@@ -45,10 +52,11 @@ header
       +transition(.3s)
       text-decoration: none
 
+hr.divider
+  border: 1px solid gray
+
 .nav
   text-align: center 
-  box-shadow: inset 0px 0px 2px rgba(78, 71, 71, 0.16)
-  background: #ECECEC
   &.fixed 
     position: fixed
     top: 0
@@ -56,9 +64,8 @@ header
     right: 0    
   li
     display: inline-block
-    padding: 22px 25px
+    padding: 30px 20px
     position: relative
-    background: #ECECEC
     a
       text-transform: uppercase
       font-weight: 400
@@ -67,9 +74,6 @@ header
       color: rgb(78, 78, 78)
       text-decoration: none
       text-shadow: rgb(218, 218, 218) 0px 1px 1px
-      +transition(.3s color)
-      &:hover
-        color: darken($ltgray, 35%)
       &.mobile-hover
         color: rgb(78, 78, 78)
 
