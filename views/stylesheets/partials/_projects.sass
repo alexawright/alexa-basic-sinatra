@@ -6,19 +6,16 @@
   img
     +box-shadow(0px 1px 1px rgba(209, 209, 209, 0.63))
     display: inline
+    opacity: .9
     &:hover
       -webkit-transition: opacity .2s ease-in-out
-      opacity: .9
+      opacity: 1
 
 .project-tile 
   margin-bottom: 50px 
   text-align: center 
   img 
     width: 89%
-
-.pull-center
-  margin: auto
-  text-align: center
 
 .item
   text-align: center
@@ -38,17 +35,7 @@
     &.half-width
       max-width: 450px
       margin-bottom: 40px
-  p
-    color: $dkgray
-    font-size: 14px
-    max-width: 950px
-    text-align: center
-    margin: auto
-    line-height: 23px
-    padding: 15px
-    text-decoration: none
   
-
 img.no-shadow
   box-shadow: none
   border: 0
@@ -60,6 +47,9 @@ img.no-shadow
   border-top: 1px solid #ddd 
   text-align: center 
   margin: 2em auto
+
+.row.web img 
+  border: 1px solid #F5F5F5
 
 
 @media (max-width: 840px)

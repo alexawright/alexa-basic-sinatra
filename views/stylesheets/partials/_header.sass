@@ -1,20 +1,17 @@
 header
   position: relative
   text-align: center
-  margin-top: 15px
+  margin-top: 17px
   .container
     width: 100%
     padding-top: 12px
   img.header
     width: 85px
-    &:hover
-      color: darken($dkgray, 40%)
 
 .info
   background: $offblack
-  padding: 40px 
+  padding: 55px 
   text-align: center
-  margin-top: 20px
   display: none
   p
     font-size: 15px 
@@ -22,13 +19,12 @@ header
     font-weight: 200 
     letter-spacing: .5px 
     text-align: center 
-    color: rgb(219, 219, 219) 
+    color: #C2C2C2
     line-height: 26px 
-    max-width: 533px 
+    max-width: 600px 
     margin: auto 
-    text-shadow: rgb(107, 107, 107) 0px 1px 0px
   a
-    color: $ltgray
+    color: white
     text-decoration: none
     border-bottom: 1px solid #777
     &:hover
@@ -36,15 +32,11 @@ header
       +transition(.3s)
       text-decoration: none
 
-.sticky-header
-  background: white
-  z-index: 1
-  width: 100%
-  display: block
 
 .nav
   text-align: center
   margin: auto
+  z-index: 1
   width: 100%
   border-bottom: 1px solid #DADADA 
   &.fixed 
@@ -54,7 +46,7 @@ header
     right: 0    
   li
     display: inline-block
-    padding: 15px 5px
+    padding: 25px 20px
     position: relative
     a
       text-transform: uppercase
