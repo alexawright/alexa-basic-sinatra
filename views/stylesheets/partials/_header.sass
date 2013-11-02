@@ -9,29 +9,38 @@ header
     width: 85px
 
 .info
-  background: $offblack
+  background: $white
   padding: 55px 
   text-align: center
-  display: none
+  img 
+    margin-bottom: 30px
+  h1, h3
+    text-align: left
   p
-    font-size: 15px 
-    +font 
+    font-family: adobe garamond pro, times, times new roman, serif
+    font-size: 16px
     font-weight: 200 
-    letter-spacing: .5px 
     text-align: center 
-    color: #C2C2C2
+    color: $dkgray
     line-height: 26px 
-    max-width: 600px 
     margin: auto 
+    text-align: left
   a
-    color: white
+    color: $dkgray
     text-decoration: none
-    border-bottom: 1px solid #777
+    border-bottom: 1px solid $dkgray
     &:hover
       color: darken($ltgray, 20%)
       +transition(.3s)
       text-decoration: none
 
+.social ul li 
+  display: inline-block
+  padding: 0 6px
+  a
+    border-bottom: none
+    color: $dkgray
+    font-size: 20px
 
 .nav
   text-align: center
