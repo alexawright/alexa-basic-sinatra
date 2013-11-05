@@ -1,6 +1,7 @@
 $ ->
 
-  $(".about-link").on "click", ->
+  $(".about-link").on "click", (e) ->
+    e.preventDefault()
     $("#about").slideToggle()
 
   $.isMobile = ->
