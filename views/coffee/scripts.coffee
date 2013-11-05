@@ -1,5 +1,8 @@
 $ ->
 
+  $(".about-link").on "click", ->
+    $("#about").slideToggle()
+
   $.isMobile = ->
     navigator.platform.indexOf("iPad") isnt -1 or navigator.platform.indexOf("iPhone") isnt -1
 
