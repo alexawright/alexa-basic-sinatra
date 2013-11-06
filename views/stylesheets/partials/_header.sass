@@ -75,6 +75,10 @@ header
     display: inline-block
     padding: 23px 20px
     position: relative
+    &.active 
+      a 
+        border-bottom: 1px solid rgb(223, 223, 223)
+
     a
       text-transform: uppercase
       font-weight: 500
@@ -82,9 +86,10 @@ header
       font-size: 12px
       color: rgb(78, 78, 78)
       text-decoration: none
-      // text-shadow: rgb(218, 218, 218) 0px 1px 1px
+      padding-bottom: 3px
       &.mobile-hover
         color: rgb(78, 78, 78)
+
 
 @media (max-width: 600px)
 
