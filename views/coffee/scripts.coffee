@@ -1,4 +1,10 @@
 $ ->
+  $(".nav li a").on "click", ->
+    if $(this).hasClass "about-link"
+      false
+    else 
+      $("#about").slideUp()
+
 
   $(".about-link").on "click", (e) ->
     e.preventDefault()
