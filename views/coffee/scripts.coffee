@@ -30,13 +30,13 @@ $ ->
       navItem.eq(0).addClass "active"
     
     if window.location.pathname is "/fashion"
-      navItem.eq(1).addClass "active"
-    
-    if window.location.pathname is "/play"
       navItem.eq(2).addClass "active"
     
-    if window.location.pathname is "/web"
+    if window.location.pathname is "/play"
       navItem.eq(3).addClass "active"
+    
+    if window.location.pathname is "/web"
+      navItem.eq(1).addClass "active"
 
   activeNav()
 
