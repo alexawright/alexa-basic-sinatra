@@ -25,6 +25,12 @@
     box-shadow: 0px 1px 1px #ccc
     background: linear-gradient(#3BB3E3, #009FDD)
 
+  hr 
+    border-color: #eee
+    border-top: 0
+    margin-left: -30px
+    margin-right: -30px
+
   ul 
     margin: 15px 0 15px
     li
@@ -49,10 +55,9 @@
       margin: auto
       margin-top: -30px
       background: white
-    hr 
-      border: 1px solid red
 
-  .button
+
+  button
     margin-top: 15px
     font-weight: 600
     width: 100%
@@ -62,15 +67,17 @@
     text-align: center
     width: 300px
     padding: 10px
+    border: 0
     background: red
     font-size: 14px
     font-weight: 500
     width: 100%
     text-shadow: 0 1px 0 rgba(0,0,0,0.25)
     display: block
-    .signup
+    &.signup
       background: orange
-    .facebook
+    &.facebook
+      margin-top: 30px
       border-color: #44669e #355385 #26406a
       background: #587fbf
       background: linear-gradient(#3BB3E3, #009FDD)
@@ -78,6 +85,7 @@
   
   h1
     font-size: 15px
+    margin: 10px 0 
 
   p
     font-size: 11px
