@@ -1,0 +1,45 @@
+.hello
+
+  .banner
+    Create Your Free Account
+
+  .list
+    %h1 Registered users can:
+    %ul 
+      %li View unlimited pet profiles
+      %li Create a personal favorites list
+      %li Send & receive messages
+      %li Create a personal profile
+    %h1 It's simple & free!
+
+  %hr
+
+  .button.facebook
+    Sign Up with Facebook
+
+  .or 
+    %hr
+    .or-circle
+      OR
+
+  .signup-form
+    %h1 Tell Us About Yourself
+    
+    .input-left
+      .select-wrap
+        I am an 
+        %select
+          %option Individual 
+          %option Company 
+      %input{placeholder: "First Name"}
+      %input{placeholder: "Password"}
+
+    .input-right 
+      %input.email{placeholder: "Email Address"}
+      %input{placeholder: "Last Name"}
+      %input{placeholder: "Zip Code"}
+
+    %p By signing up for AllPaws, you agree to our Terms of Service & Privacy Policy
+
+  .button.signup
+    Sign Up
