@@ -12,17 +12,11 @@
   padding-top: 25px
   margin-bottom: 20px
   img
-    +box-shadow(0px 1px 1px rgba(209, 209, 209, 0.63))
     display: inline
     opacity: .95
-    -webkit-transition: all 200ms linear
-    -moz-transition: all 200ms linear
-    -o-transition: all 200ms linear
-    transition: all 200ms linear
-    -webkit-transform: translateZ(0)
-    -moz-transform: translateZ(0)
-    -o-transform: translateZ(0)
-    transform: translateZ(0)
+    +transition(all 200ms linear)
+    +translate3d(0,0,0)
+    +box-shadow(0px 1px 1px rgba(209, 209, 209, 0.63))
     &:hover
       -webkit-transition: opacity .2s ease-in-out
       opacity: 1
@@ -30,12 +24,14 @@
       -moz-transform: scale(1.03) translateZ(0)
       -o-transform: scale(1.03) translateZ(0)
       transform: scale(1.03) translateZ(0)
+      +box-shadow(0px 1px 1px rgba(209, 209, 209, 0.63))
   .row.web img
     max-width: 400px
 
 .project-tile 
   margin-bottom: 50px 
   text-align: center 
+
   img 
     width: 89%
 
@@ -78,9 +74,6 @@ img.enlarge
   text-align: center 
   margin-top: 1em
   margin-bottom: 3em
-
-.projects.new
-  margin-top: 200px
 
 @media (max-width: $screen-md)
   .video-frame
