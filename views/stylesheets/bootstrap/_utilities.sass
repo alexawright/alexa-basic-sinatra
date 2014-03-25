@@ -8,6 +8,9 @@
 .clearfix
   +clearfix
 
+.center-block
+  +center-block
+
 .pull-right
   float: right !important
 
@@ -17,6 +20,7 @@
 // Toggling content
 // -------------------------
 
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
 .hide
   display: none !important
 
@@ -27,41 +31,18 @@
   visibility: hidden
 
 .text-hide
-  +hide-text
+  +text-hide
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden
+  display: none !important
+  visibility: hidden !important
 
 // For Affix plugin
 // -------------------------
 
 .affix
   position: fixed
-
-// Images
-
-img
-  vertical-align: middle
-
-// Responsive images (ensure images don't scale beyond their parents)
-.img-responsive
-  +img-responsive
-
-// Rounded corners
-.img-rounded
-  border-radius: $border-radius-large
-
-// Image thumbnails
-//
-// Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
-.img-thumbnail
-  padding: $thumbnail-padding
-  line-height: $line-height-base
-  background-color: $thumbnail-bg
-  border: 1px solid $thumbnail-border
-  border-radius: $thumbnail-border-radius
-  +transition(all 0.2s ease-in-out)
-  // Keep them at most 100% wide
-  +img-responsive(inline-block)
-
-// Perfect circle
-.img-circle
-  border-radius: 50%
-  // set radius in percents

@@ -18,7 +18,6 @@
   abbr[title]:after
     content: " (" attr(title) ")"
   // Don't show links for images, or javascript/internal links
-  .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after
     content: ""
@@ -34,9 +33,6 @@
     page-break-inside: avoid
   img
     max-width: 100% !important
-  @page
-    margin: 2cm .5cm
-
   p,
   h2,
   h3
@@ -45,6 +41,10 @@
   h2,
   h3
     page-break-after: avoid
+  // Chrome (OSX) fix for https://github.com/twbs/bootstrap/issues/11245
+  // Once fixed, we can just straight up remove this.
+  select
+    background: #fff !important
   // Bootstrap components
   .navbar
     display: none
